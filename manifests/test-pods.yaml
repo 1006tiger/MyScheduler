@@ -1,0 +1,239 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-1
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-1
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "500m"
+        memory: "510Mi"
+      requests:
+        cpu: "500m"
+        memory: "500Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "500M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-2
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-2
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "1034Mi"
+      requests:
+        cpu: "1000m"
+        memory: "1024Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "1024M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-3
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-3
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "1546Mi"
+      requests:
+        cpu: "1000m"
+        memory: "1536Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "1536M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-4
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-4
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "2000m"
+        memory: "2058Mi"
+      requests:
+        cpu: "2000m"
+        memory: "2048Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "2048M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-5
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-5
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "250m"
+        memory: "266Mi"
+      requests:
+        cpu: "250m"
+        memory: "256Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "256M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-6
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-6
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "1500m"
+        memory: "2058Mi"
+      requests:
+        cpu: "1500m"
+        memory: "2048Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "2048M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-7
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-7
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "500m"
+        memory: "1034Mi"
+      requests:
+        cpu: "500m"
+        memory: "1024Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "1024M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-8
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-8
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "2000m"
+        memory: "4106Mi"
+      requests:
+        cpu: "2000m"
+        memory: "4096Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "4096M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-9
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-9
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "3000m"
+        memory: "3082Mi"
+      requests:
+        cpu: "3000m"
+        memory: "3072Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "3072M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-10
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-10
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "750m"
+        memory: "522Mi"
+      requests:
+        cpu: "750m"
+        memory: "512Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "512M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-11
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-11
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "1034Mi"
+      requests:
+        cpu: "1000m"
+        memory: "1024Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "1024M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-12
+  namespace: k8s
+spec:
+  containers:
+  - name: pod-12
+    image: polinux/stress
+    resources:
+      limits:
+        cpu: "250m"
+        memory: "138Mi"
+      requests:
+        cpu: "250m"
+        memory: "128Mi"
+    command: ["stress"]
+    args: ["--vm", "1", "--vm-bytes", "128M", "--vm-hang", "10000", "--cpu", "1"]
+  schedulerName: custom-scheduler
